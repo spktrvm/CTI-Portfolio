@@ -2,7 +2,7 @@
 
 Welcome to my Cyber Threat Intelligence (CTI) and Malware Analysis repository. 
 
-I am a Cybersecurity Professional specializing in Threat Intelligence. This repository serves as a live portfolio showcasing my practical application of intelligence lifecycles, threat modeling, and defensive methodologies. The content here demonstrates my ability to translate technical analysis into actionable intelligence, aligning with industry standards like the MITRE ATT&CK framework and EC-Council CTIA methodologies.
+I am a Cybersecurity Professional specializing in Threat Intelligence. This repository serves as a live portfolio showcasing my practical application of intelligence lifecycles, threat modeling, and defensive methodologies. The content here demonstrates my ability to translate technical analysis into actionable intelligence, aligning with industry standards like the MITRE ATT&CK framework.
 
 ## 📂 Repository Structure
 
