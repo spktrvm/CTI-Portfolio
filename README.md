@@ -21,7 +21,7 @@ I am a Cybersecurity Professional specializing in Threat Intelligence. This repo
 ### 🆕 Latest Analysis: ENCFORGE Ransomware (July 2026)
 An in-depth technical analysis of **ENCFORGE**, a compiled Go ransomware deployed by the **JADEPUFFER** threat actor, specifically designed to target and destroy Artificial Intelligence and Machine Learning infrastructure (model weights, vector databases, and training pipelines). 
 
-* 📄 **Full Report & TTPs:** [ENCFORGE Ransomware Threat Intel Report](ENCFORGE_Ransomware_Report.md)
+* 📄 **Full Report & TTPs:** [ENCFORGE Ransomware Threat Intel Report](/Reports/ENCFORGE_Ransomware_Report.md)
 * 🛡️ **Detection Engineering:** [ENCFORGE YARA Rule](YARA_Rules/ENCFORGE.yar)
 * **Key Topics:** `Container Escape`, `AI/ML Targeting`, `Ransomware`, `Docker Socket Abuse`, `Go Malware`.
 
