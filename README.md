@@ -16,6 +16,15 @@ I am a Cybersecurity Professional specializing in Threat Intelligence. This repo
 * **[IOC Enricher Automation](./Scripts_and_Tools/ioc_enricher.py)**: A Python utility that automatically cross-references indicators of compromise against VirusTotal and Shodan to identify threat actor infrastructure exposure.
 * **[ClickFix RAT Detection Rule](./YARA_Rules/ClickFix_Detection.yar)**: A robust YARA rule engineered to detect evasive PowerShell execution and Base64 obfuscated payloads associated with the ClickFix campaign.
 
+## 📂 Threat Intelligence Research & Reports
+
+### 🆕 Latest Analysis: ENCFORGE Ransomware (July 2026)
+An in-depth technical analysis of **ENCFORGE**, a compiled Go ransomware deployed by the **JADEPUFFER** threat actor, specifically designed to target and destroy Artificial Intelligence and Machine Learning infrastructure (model weights, vector databases, and training pipelines). 
+
+* 📄 **Full Report & TTPs:** [ENCFORGE Ransomware Threat Intel Report](ENCFORGE_Ransomware_Report.md)
+* 🛡️ **Detection Engineering:** [ENCFORGE YARA Rule](YARA_Rules/ENCFORGE.yar)
+* **Key Topics:** `Container Escape`, `AI/ML Targeting`, `Ransomware`, `Docker Socket Abuse`, `Go Malware`.
+
 ## 🤝 Let's Connect
 
 Feel free to explore the repository. If you want to discuss threat intelligence, share insights, or collaborate on a project, you can reach out to me:
