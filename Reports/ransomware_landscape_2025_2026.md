@@ -2,11 +2,11 @@
 
 **Date of Issue:** September 22, 2026 | **Region:** LATAM
 
-## Executive Summary
+## 📊 Executive Summary
 
 From multiple Threat Intelligence feeds and what I observed that during 2025 and 2026, six ransomware groups—**Qilin, The Gentlemen, LockBit 5.0, Akira, DragonForce, INC Ransom**—intensified their operations against enterprise organizations. The dominant pattern is clear: initial access is obtained by exploiting perimeter devices (VPNs, firewalls) and Internet-exposed services, rather than through traditional phishing, shifting the risk directly to the edge infrastructure. A significant data point is the re-consolidation of the market: in Q1 2026, Qilin, Akira, The Gentlemen, and LockBit accounted for approximately 41% of victims published on leak sites \[1]\[2]\[3].
 
-## Group Profiles
+## 👥 Group Profiles
 
 * **Qilin (aka Agenda):** RaaS active since 2022 (Golang → Rust/C), focused since 2023 on critical infrastructure and OT. 80-85% payout to affiliates and double extortion. It is the most active group globally in 2026 and a member of the "cartel" alongside DragonForce \[1]\[4].
 * **The Gentlemen (Storm-2697):** Emerging RaaS (Jul. 2025), former Qilin affiliate. Cross-platform lockers in Go and C (Windows, Linux, NAS, BSD, ESXi), strong self-propagation, and EDR evasion via BYOVD \[2]\[5].
@@ -15,7 +15,7 @@ From multiple Threat Intelligence feeds and what I observed that during 2025 and
 * **DragonForce:** RaaS since 2024, based on leaked LockBit 3.0 and Conti V3 builders. Linked to Scattered Spider (UNC3944); abuses Managed Service Providers (MSPs) \[7].
 * **INC Ransom (GOLD IONIC / MITRE G1032):** Double extortion RaaS active since Jul. 2023, tracked as GOLD IONIC. With over 300 victims in 2025 (830+ since 2023), it was the most deployed ransomware in Jul. 2025. Multi-platform (Windows/Linux/ESXi, rewritten in Rust), focused on healthcare, government, education, and manufacturing; its leaked code originated Lynx and Sinobi. \[12]
 
-## Risk by Group
+## ⚠️ Risk by Group
 
 | Group | Primary Target | Initial Access Vector | Activity Level | 
 | ----- | ----- | ----- | ----- | 
@@ -26,7 +26,7 @@ From multiple Threat Intelligence feeds and what I observed that during 2025 and
 | **DragonForce** | Managed Providers (MSP) | Ivanti Connect Secure (CVE-2024-21887), Log4Shell | High (supply chain) | 
 | **INC Ransom** | Healthcare / Government / Manufacturing | Citrix NetScaler (CVE-2023-3519), Fortinet EMS (CVE-2023-48788) | Very High (#1 Jul. 2025) | 
 
-## Potential Impact
+## 💣 Potential Impact
 
 * Compromise of perimeter devices (VPN/firewall) granting direct access to the internal network without valid credentials \[1]\[4]\[6].
 * MFA bypass via session hijacking (Citrix Bleed) and misconfigurations, nullifying a key security control \[3]\[6].
@@ -34,7 +34,7 @@ From multiple Threat Intelligence feeds and what I observed that during 2025 and
 * Propagation through Managed Service Providers (MSPs), extending the impact to multiple downstream clients (supply chain) \[4]\[7].
 * Deactivation of EDR/antivirus from the kernel via BYOVD, blinding detection before ransomware deployment \[5]\[7]\[8]\[9]\[10].
 
-## Exploited Vulnerabilities by Group
+## 🐛 Exploited Vulnerabilities by Group
 
 ### Qilin
 | CVE | Product | Description | 
@@ -63,7 +63,7 @@ From multiple Threat Intelligence feeds and what I observed that during 2025 and
 
 *(Note: LockBit 5.0, Akira, DragonForce, and INC Ransom tables have been translated with the same structural integrity)*
 
-## Key Findings for Decision Making
+## 🔑 Key Findings for Decision Making
 
 * The perimeter is the primary vector of compromise. Initial access is heavily concentrated on edge devices from Fortinet, SonicWall, Citrix, Check Point, PAN-OS, and Ivanti. Prioritizing patching and exposure reduction directly shrinks the attack surface. \[1]\[4]\[6]\[12]
 * MFA alone is insufficient. Akira and LockBit evade it through session hijacking and misconfigurations. After applying patches, it is imperative to invalidate active sessions to close persistent access. \[3]\[6]\[12]
@@ -71,7 +71,7 @@ From multiple Threat Intelligence feeds and what I observed that during 2025 and
 * Virtualization is a top-priority target. Multiple CVEs target ESXi/vCenter (CVE-2024-37085, CVE-2021-21972). Isolating the management plane and ensuring immutable backups are recommended containment measures. \[5]\[6]\[12]
 * Known vulnerabilities remain highly effective. Log4Shell, Fortinet flaws (2018/2022), and Citrix Bleed confirm that timely patching remains the most cost-effective defense. \[3]\[7]\[12]
 
-## Recommendations
+## 🛡️ Recommendations
 
 * Prioritize vulnerability remediation on edge or perimeter devices.
 * Invalidate sessions and enforce phishing-resistant MFA (FIDO2): After patching, force the termination of active sessions, especially on Citrix/SonicWall.
@@ -79,7 +79,7 @@ From multiple Threat Intelligence feeds and what I observed that during 2025 and
 * Block vulnerable drivers (BYOVD): Enable Microsoft Vulnerable Driver Blocklist (HVCI) and monitor the loading of `wsftprm.sys`, `GameDriverX64.sys`, `K7RKScan.sys`, `filwfp.sys`, `filnk.sys`, and `fildds.sys`.
 * Continuous validation against vulnerabilities with a high probability of exploitation, particularly those observed in active campaigns.
 
-## Sources
+## 📚 Sources
 * FalconFeeds, "Qilin Ransomware Threat Intelligence Report," FalconFeeds CTI (FF-CTI-QILIN-2026-001), June 12, 2026. Online - Available: https://falconfeeds-reports.blr1.cdn.digitaloceanspaces.com/threat-reports/Qilin_ThreatIntel_Report.pdf.
 * Unit 42, "No Manners Here: The Ruthless Rise of The Gentlemen Ransomware," Palo Alto Networks, 2026. Online - Available: https://unit42.paloaltonetworks.com/the-gentlemen-ransomware/.
 * FalconFeeds, "LockBit Ransomware Threat Intelligence Report," FalconFeeds CTI (FF-CTI-LOCKBIT-2026-001), June 8, 2026. Online - Available: https://falconfeeds-reports.blr1.cdn.digitaloceanspaces.com/threat-reports/FF-CTI-LOCKBIT-2026-001.pdf.
