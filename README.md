@@ -18,6 +18,12 @@ I am a Cybersecurity Professional specializing in Threat Intelligence. This repo
 
 ## 📂 Threat Intelligence Research & Reports
 
+🆕 Latest Landscape Report: LATAM Ransomware Overview 2025-2026
+A comprehensive threat intelligence report detailing the operational shift of major ransomware groups (Qilin, The Gentlemen, LockBit 5.0, Akira, DragonForce, INC Ransom) targeting LATAM. The analysis highlights a critical pivot towards exploiting perimeter devices and edge infrastructure vulnerabilities over traditional phishing.
+
+* 📄 **Full Report**: [Ransomware Landscape 2025-2026](/Reports/ransomware_landscape_2025_2026.md)
+* **Key Topics**: `Edge Exploitation`, `Ransomware-as-a-Service (RaaS)`, `BYOVD`, `VPN/Firewall Vulnerabilities`, `LATAM Threat Landscape`, `RaaS`.
+
 ### 🆕 Latest Analysis: ENCFORGE Ransomware (July 2026)
 An in-depth technical analysis of **ENCFORGE**, a compiled Go ransomware deployed by the **JADEPUFFER** threat actor, specifically designed to target and destroy Artificial Intelligence and Machine Learning infrastructure (model weights, vector databases, and training pipelines). 
 
