@@ -80,4 +80,11 @@ From multiple Threat Intelligence feeds and what I observed that during 2025 and
 * Continuous validation against vulnerabilities with a high probability of exploitation, particularly those observed in active campaigns.
 
 ## Sources
-*(Sources remain in their original academic format as cited in the previous document)*
+* FalconFeeds, "Qilin Ransomware Threat Intelligence Report," FalconFeeds CTI (FF-CTI-QILIN-2026-001), June 12, 2026. Online - Available: https://falconfeeds-reports.blr1.cdn.digitaloceanspaces.com/threat-reports/Qilin_ThreatIntel_Report.pdf.
+* Unit 42, "No Manners Here: The Ruthless Rise of The Gentlemen Ransomware," Palo Alto Networks, 2026. Online - Available: https://unit42.paloaltonetworks.com/the-gentlemen-ransomware/.
+* FalconFeeds, "LockBit Ransomware Threat Intelligence Report," FalconFeeds CTI (FF-CTI-LOCKBIT-2026-001), June 8, 2026. Online - Available: https://falconfeeds-reports.blr1.cdn.digitaloceanspaces.com/threat-reports/FF-CTI-LOCKBIT-2026-001.pdf.
+* NIST, "CVE-2023-52271 Detail," National Vulnerability Database. Online - Available: https://nvd.nist.gov/vuln/detail/CVE-2023-52271.
+* NIST, "CVE-2025-61155 Detail," National Vulnerability Database. Online - Available: https://nvd.nist.gov/vuln/detail/CVE-2025-61155.
+* NIST, "CVE-2025-1055 Detail," National Vulnerability Database. Online - Available: https://nvd.nist.gov/vuln/detail/CVE-2025-1055.
+* CISA, "Known Exploited Vulnerabilities Catalog," Cybersecurity and Infrastructure Security Agency. Online - Available: https://www.cisa.gov/known-exploited-vulnerabilities-catalog.
+* SOCRadar, "INC Ransom Ransomware Group Profile," SOCRadar Ransomware Intelligence, 2026. Online - Available: https://socradar.io/free-tools/ransomware-intelligence/groups/inc-ransom.
