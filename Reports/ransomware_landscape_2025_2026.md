@@ -1,6 +1,6 @@
 # Ransomware Landscape 2025-2026: Active Groups and Exploited Vulnerabilities
 
-**Date of Issue:** August 24, 2026 | **Region:** LATAM
+**Date of Issue:** September 22, 2026 | **Region:** LATAM
 
 ## Executive Summary
 
